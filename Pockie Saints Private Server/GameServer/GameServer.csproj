@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{242E91C8-0D7C-4A01-8BF5-C4E1F73ED1F6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameServer</RootNamespace>
+    <AssemblyName>GameServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>sing.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\cloud\v\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accounts\AccountHandler.cs" />
+    <Compile Include="accounts\Log.cs" />
+    <Compile Include="accounts\MD5Checksum.cs" />
+    <Compile Include="All Stuff\SystemCulture.cs" />
+    <Compile Include="All Stuff\RoleControl.cs" />
+    <Compile Include="All Stuff\ConfigLoad.cs" />
+    <Compile Include="All Stuff\ConsoleCode.cs" />
+    <Compile Include="All Stuff\DatabaseInfo.cs" />
+    <Compile Include="All Stuff\FlashPolicy.cs" />
+    <Compile Include="ByteTool.cs" />
+    <Compile Include="chartools\Byte.cs" />
+    <Compile Include="chartools\QuickID.cs" />
+    <Compile Include="code\Chance.cs" />
+    <Compile Include="CharTools.cs" />
+    <Compile Include="All Stuff\data.cs" />
+    <Compile Include="code\StarMap.cs" />
+    <Compile Include="code\TaskNew.cs" />
+    <Compile Include="gameconfig\MarketConfig.cs" />
+    <Compile Include="gamedata\Achievement.cs" />
+    <Compile Include="gamedata\BagHelper.cs" />
+    <Compile Include="gamedata\FriendHelper.cs" />
+    <Compile Include="gamedata\GameItems.cs" />
+    <Compile Include="gamedata\LuckyWheelData.cs" />
+    <Compile Include="gamedata\MountHelper.cs" />
+    <Compile Include="gamedata\StarMapCfg.cs" />
+    <Compile Include="gamedata\SuiteInfo.cs" />
+    <Compile Include="JsonLib.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ClockWork.cs" />
+    <Compile Include="code\Active.cs" />
+    <Compile Include="code\Bags.cs" />
+    <Compile Include="code\Role.cs" />
+    <Compile Include="code\Combat.cs" />
+    <Compile Include="code\AutoFight.cs" />
+    <Compile Include="code\Buff.cs" />
+    <Compile Include="code\Happy.cs" />
+    <Compile Include="code\Guild.cs" />
+    <Compile Include="code\Premium.cs" />
+    <Compile Include="code\Frame.cs" />
+    <Compile Include="code\StarTarget.cs" />
+    <Compile Include="code\ZodiacGoal.cs" />
+    <Compile Include="CommandHandlers\C10.cs" />
+    <Compile Include="CommandHandlers\C11.cs" />
+    <Compile Include="CommandHandlers\C12.cs" />
+    <Compile Include="CommandHandlers\C13.cs" />
+    <Compile Include="CommandHandlers\C14.cs" />
+    <Compile Include="CommandHandlers\C15.cs" />
+    <Compile Include="CommandHandlers\C16.cs" />
+    <Compile Include="CommandHandlers\C17.cs" />
+    <Compile Include="CommandHandlers\C18.cs" />
+    <Compile Include="CommandHandlers\C19.cs" />
+    <Compile Include="CommandHandlers\C20.cs" />
+    <Compile Include="CommandHandlers\C21.cs" />
+    <Compile Include="CommandHandlers\C22.cs" />
+    <Compile Include="CommandHandlers\C23.cs" />
+    <Compile Include="CommandHandlers\C24.cs" />
+    <Compile Include="CommandHandlers\C25.cs" />
+    <Compile Include="CommandHandlers\C26.cs" />
+    <Compile Include="CommandHandlers\C27.cs" />
+    <Compile Include="CommandHandlers\C28.cs" />
+    <Compile Include="CommandHandlers\C29.cs" />
+    <Compile Include="CommandHandlers\C30.cs" />
+    <Compile Include="CommandHandlers\C31.cs" />
+    <Compile Include="CommandHandlers\C32.cs" />
+    <Compile Include="CommandHandlers\C33.cs" />
+    <Compile Include="CommandHandlers\C34.cs" />
+    <Compile Include="CommandHandlers\C35.cs" />
+    <Compile Include="CommandHandlers\C36.cs" />
+    <Compile Include="CommandHandlers\C37.cs" />
+    <Compile Include="CommandHandlers\C38.cs" />
+    <Compile Include="CommandHandlers\C39.cs" />
+    <Compile Include="CommandHandlers\C40.cs" />
+    <Compile Include="CommandHandlers\C41.cs" />
+    <Compile Include="CommandHandlers\C42.cs" />
+    <Compile Include="CommandHandlers\C43.cs" />
+    <Compile Include="CommandHandlers\C44.cs" />
+    <Compile Include="CommandHandlers\C45.cs" />
+    <Compile Include="CommandHandlers\C47.cs" />
+    <Compile Include="CommandHandlers\C48.cs" />
+    <Compile Include="CommandHandlers\C49.cs" />
+    <Compile Include="CommandHandlers\C50.cs" />
+    <Compile Include="CommandHandlers\C60.cs" />
+    <Compile Include="CommandHandlers\Commands.cs" />
+    <Compile Include="ContentAttribute.cs" />
+    <Compile Include="Events\AchieveEvent.cs" />
+    <Compile Include="Events\Events.cs" />
+    <Compile Include="gamedata\SkillInfo.cs" />
+    <Compile Include="gamedata\SynthHelper.cs" />
+    <Compile Include="code\Equip.cs" />
+    <Compile Include="code\Escort.cs" />
+    <Compile Include="code\Horoscope.cs" />
+    <Compile Include="code\LuckyWheel.cs" />
+    <Compile Include="code\Mail.cs" />
+    <Compile Include="code\Medal.cs" />
+    <Compile Include="code\Mount.cs" />
+    <Compile Include="code\Pet.cs" />
+    <Compile Include="code\Reward.cs" />
+    <Compile Include="code\Shortcut.cs" />
+    <Compile Include="code\Skill.cs" />
+    <Compile Include="code\Tasks.cs" />
+    <Compile Include="code\temp.cs" />
+    <Compile Include="code\Title.cs" />
+    <Compile Include="code\Vip.cs" />
+    <Compile Include="Command\AchievementController.cs" />
+    <Compile Include="Command\ActiveController.cs" />
+    <Compile Include="Command\AnnoumcementController.cs" />
+    <Compile Include="Command\AntiAddictionSystemController.cs" />
+    <Compile Include="Command\ArenaController.cs" />
+    <Compile Include="Command\AutoFightController.cs" />
+    <Compile Include="Command\BagController.cs" />
+    <Compile Include="Command\BattlefieldController.cs" />
+    <Compile Include="Command\BuffController.cs" />
+    <Compile Include="Command\BuildController.cs" />
+    <Compile Include="Command\ChangeCampController.cs" />
+    <Compile Include="Command\ChatController.cs" />
+    <Compile Include="Command\CollectController.cs" />
+    <Compile Include="Command\CrossServiceBattlefieldController.cs" />
+    <Compile Include="Command\DialogController.cs" />
+    <Compile Include="Command\DreamlandController.cs" />
+    <Compile Include="Command\DropPackController.cs" />
+    <Compile Include="Command\EctypeTimeBuyController.cs" />
+    <Compile Include="Command\EscortController.cs" />
+    <Compile Include="Command\ExchangeController.cs" />
+    <Compile Include="Command\FigureController.cs" />
+    <Compile Include="Command\FriendController.cs" />
+    <Compile Include="Command\GamingController.cs" />
+    <Compile Include="Command\GatewayController.cs" />
+    <Compile Include="Command\GodHeadController.cs" />
+    <Compile Include="Command\GuideController.cs" />
+    <Compile Include="Command\GuildBattleController.cs" />
+    <Compile Include="Command\GuildController.cs" />
+    <Compile Include="Command\GuildWarController.cs" />
+    <Compile Include="Command\HappyController.cs" />
+    <Compile Include="Command\HoroscopesController.cs" />
+    <Compile Include="Command\InfoGoodsController.cs" />
+    <Compile Include="Command\InsController.cs" />
+    <Compile Include="Command\IntimacyController.cs" />
+    <Compile Include="Command\InviteFriendsController.cs" />
+    <Compile Include="Command\LoginController.cs" />
+    <Compile Include="Command\LuckWheelController.cs" />
+    <Compile Include="Command\MailController.cs" />
+    <Compile Include="Command\MallController.cs" />
+    <Compile Include="Command\MarketController.cs" />
+    <Compile Include="Command\MarryController.cs" />
+    <Compile Include="Command\MedalController.cs" />
+    <Compile Include="Command\MeditationController.cs" />
+    <Compile Include="Command\MountController.cs" />
+    <Compile Include="Command\NobilityController.cs" />
+    <Compile Include="Command\PetController.cs" />
+    <Compile Include="Command\PhaseController.cs" />
+    <Compile Include="Command\PlayerInfoController.cs" />
+    <Compile Include="Command\RankController.cs" />
+    <Compile Include="Command\RewardController.cs" />
+    <Compile Include="Command\RoleController.cs" />
+    <Compile Include="Command\SceneController.cs" />
+    <Compile Include="Command\ServerLineController.cs" />
+    <Compile Include="Command\ServerTimerController.cs" />
+    <Compile Include="Command\ShortCutController.cs" />
+    <Compile Include="Command\SkillController.cs" />
+    <Compile Include="Command\SpaController.cs" />
+    <Compile Include="Command\StarBattlefieldController.cs" />
+    <Compile Include="Command\StarMapController.cs" />
+    <Compile Include="Command\StarTargetController.cs" />
+    <Compile Include="Command\StorageController.cs" />
+    <Compile Include="Command\TaskController.cs" />
+    <Compile Include="Command\TeamController.cs" />
+    <Compile Include="Command\TranController.cs" />
+    <Compile Include="Command\TransmuteController.cs" />
+    <Compile Include="Command\VipController.cs" />
+    <Compile Include="Command\WardrobeController.cs" />
+    <Compile Include="Command\YellowDiamondController.cs" />
+    <Compile Include="DateUtil.cs" />
+    <Compile Include="Events\Happy.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="gamedata\ExploreWiz.cs" />
+    <Compile Include="gamedata\horoscope.cs" />
+    <Compile Include="gamedata\Refine.cs" />
+    <Compile Include="gamedata\ShopHelper.cs" />
+    <Compile Include="gamedata\Transfer.cs" />
+    <Compile Include="Gameplay\BattleFieldConfig.cs" />
+    <Compile Include="Gameplay\Guild.cs" />
+    <Compile Include="Gameplay\GuildShop.cs" />
+    <Compile Include="Gameplay\Rankings.cs" />
+    <Compile Include="Gameplay\SpecialCodes.cs" />
+    <Compile Include="Gameplay\Team.cs" />
+    <Compile Include="hidden\Codec.cs" />
+    <Compile Include="hidden\pmcode.cs" />
+    <Compile Include="Loads.cs" />
+    <Compile Include="log.cs" />
+    <Compile Include="proc\threads.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Quest Helpers\QuestCode.cs" />
+    <Compile Include="Quest Helpers\QuestReward.cs" />
+    <Compile Include="Quest Helpers\QuestAccept.cs" />
+    <Compile Include="Quest Helpers\QuestCommand.cs" />
+    <Compile Include="Quest Helpers\QuestPush.cs" />
+    <Compile Include="Randoms.cs" />
+    <Compile Include="scripts\Packscripter.cs" />
+    <Compile Include="scripts\PowerUpScripter.cs" />
+    <Compile Include="World\Misc\Banner.cs" />
+    <Compile Include="World\SceneCustom\BattleField.cs" />
+    <Compile Include="World\SceneCustom\Beach.cs" />
+    <Compile Include="World\Misc\chat.cs" />
+    <Compile Include="World\SceneCustom\CSWar.cs" />
+    <Compile Include="World\Scenes\DropFix.cs" />
+    <Compile Include="World\SceneCustom\GuildWar.cs" />
+    <Compile Include="World\Scenes\Instance.cs" />
+    <Compile Include="World\Scenes\MonsterInfo.cs" />
+    <Compile Include="World\Monster AI\MonsterTemplate.cs" />
+    <Compile Include="World\Scenes\Scene\Scene.Collect.cs" />
+    <Compile Include="World\Scenes\Scene\Scene.Drop.cs" />
+    <Compile Include="World\Scenes\Scene\Scene.MonsterAI.cs" />
+    <Compile Include="World\Scenes\SceneElements.cs" />
+    <Compile Include="World\Scenes\Scene\Scene.cs" />
+    <Compile Include="World\SceneCustom\StarBattleField.cs" />
+    <Compile Include="World\SceneCustom\StarSoulTemple.cs" />
+    <Compile Include="World\Scenes\Scene\Scene.Map.cs" />
+    <Compile Include="World\Scenes\Scene\Scene.Player.cs" />
+    <Compile Include="World\Scenes\Scene\Scene.Update.cs" />
+    <Compile Include="World\World.cs" />
+    <Compile Include="World\Zone.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared Libraries\blib\blib.csproj">
+      <Project>{4457f15e-e3c6-4b6a-a457-a7a8970cf9fe}</Project>
+      <Name>blib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared Libraries\Connector\Connector.csproj">
+      <Project>{59c1c6c9-285a-4646-bb9a-252fdcbb8d2b}</Project>
+      <Name>Connector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared Libraries\TimeZone\TimeZone.csproj">
+      <Project>{1ab73d98-2b3c-4e44-920c-d960116c34ec}</Project>
+      <Name>TimeZone</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\config\config.csproj">
+      <Project>{38917167-3bdd-4eda-9814-c32e14466ecb}</Project>
+      <Name>config</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Compile Include="World\Scenes\Scene\Scene.Monster.cs" />
+    <None Include="sing.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gameplay\Rank Text.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="blibs\" />
+    <Folder Include="cfg\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

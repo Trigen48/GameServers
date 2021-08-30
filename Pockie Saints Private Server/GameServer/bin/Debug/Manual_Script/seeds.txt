@@ -1,0 +1,9 @@
+mail,{p},Magic Seeds,Seeds,6040078,99
+mail,{p},Magic Seeds,Seeds,6040078,99
+mail,{p},Magic Seeds,Seeds,6040079,99
+mail,{p},Magic Seeds,Seeds,6040079,99
+mail,{p},Magic Seeds,Seeds,6040080,99
+mail,{p},Magic Seeds,Seeds,6040080,99
+mail,{p},Magic Seeds,Seeds,6040081,99
+mail,{p},Magic Seeds,Seeds,6040081,99
+ShowMail,{p}

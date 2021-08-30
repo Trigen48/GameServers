@@ -1,0 +1,29 @@
+<shop>
+	<shopinfo shopid="201014" shoptype="1" description="Accessories star"/>
+	<items>
+		<item id="1032004" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1032005" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1032006" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1032010" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1032011" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1032012" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1032022" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1032023" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1032024" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1032040" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1032041" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1032042" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1033004" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1033005" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1033006" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1033010" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1033011" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1033012" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1033022" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1033023" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1033024" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1033040" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1033041" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1033042" costvalue="6000" time="0" costtype="5" limit="0"/>
+	</items>
+</shop>

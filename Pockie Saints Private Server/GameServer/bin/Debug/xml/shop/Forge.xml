@@ -1,0 +1,30 @@
+<shop>
+	<shopinfo shopid="6" shoptype="1" description="Forge"/>
+	<items>
+		<item id="1110001" costvalue="7" time="0" costtype="3" limit="0"/>
+		<item id="1110002" costvalue="38" time="0" costtype="3" limit="0"/>
+		<item id="1110003" costvalue="63" time="0" costtype="3" limit="0"/>
+		<item id="1117004" costvalue="150" time="0" costtype="3" limit="0"/>
+		<item id="1117005" costvalue="600" time="0" costtype="3" limit="0"/>
+		<item id="1210004" costvalue="13" time="0" costtype="3" limit="0"/>
+		<item id="1210005" costvalue="50" time="0" costtype="3" limit="0"/>
+		<item id="1210006" costvalue="200" time="0" costtype="3" limit="0"/>
+		<item id="1213001" costvalue="45" time="0" costtype="3" limit="0"/>
+		<item id="1213002" costvalue="73" time="0" costtype="3" limit="0"/>
+		<item id="1213003" costvalue="108" time="0" costtype="3" limit="0"/>
+		<item id="1213004" costvalue="145" time="0" costtype="3" limit="0"/>
+		<item id="1214001" costvalue="20" time="0" costtype="3" limit="0"/>
+		<item id="1214002" costvalue="48" time="0" costtype="3" limit="0"/>
+		<item id="1214003" costvalue="70" time="0" costtype="3" limit="0"/>
+		<item id="1214004" costvalue="98" time="0" costtype="3" limit="0"/>
+		<item id="1215001" costvalue="5" time="0" costtype="3" limit="0"/>
+		<item id="1215002" costvalue="23" time="0" costtype="3" limit="0"/>
+		<item id="1215003" costvalue="30" time="0" costtype="3" limit="0"/>
+		<item id="1216001" costvalue="20" time="0" costtype="3" limit="0"/>
+		<item id="1216002" costvalue="48" time="0" costtype="3" limit="0"/>
+		<item id="1216003" costvalue="70" time="0" costtype="3" limit="0"/>
+		<item id="1216004" costvalue="98" time="0" costtype="3" limit="0"/>
+		<item id="1217001" costvalue="25" time="0" costtype="3" limit="0"/>
+		<item id="6040149" costvalue="13" time="0" costtype="3" limit="0"/>
+	</items>
+</shop>

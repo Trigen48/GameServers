@@ -1,0 +1,5 @@
+System.Net.Sockets.SocketException (0x80004005): Only one usage of each socket address (protocol/network address/port) is normally permitted
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at gateway.Program.SetupServerSocket() in c:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\Program.cs:line 35
+   at gateway.Program.Start() in c:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\Program.cs:line 45

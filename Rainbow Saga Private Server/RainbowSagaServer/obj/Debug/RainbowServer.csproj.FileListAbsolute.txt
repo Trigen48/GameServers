@@ -1,0 +1,40 @@
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\obj\Debug\RainbowServer.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\obj\Debug\RainbowServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\obj\Debug\RainbowServer.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\zlib32.dll
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\zlib64.dll
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\RainbowServer.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\RainbowServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\RainbowServer.pdb
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\Blib2.dll
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\protobuf-net.dll
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\TimeZone.dll
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\zlibnet.dll
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\Blib2.pdb
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\TimeZone.pdb
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\protobuf-net.pdb
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\bin\Debug\protobuf-net.xml
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\obj\Debug\RainbowServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\LoginServer\obj\Debug\RainbowServer.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\obj\Debug\RainbowServer.csprojAssemblyReference.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\obj\Debug\RainbowServer.Properties.Resources.resources
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\obj\Debug\RainbowServer.csproj.GenerateResource.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\obj\Debug\RainbowServer.csproj.CoreCompileInputs.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\obj\Debug\RainbowServer.exe
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\obj\Debug\RainbowServer.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\zlib32.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\zlib64.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\RainbowServer.exe.config
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\RainbowServer.exe
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\RainbowServer.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\Blib2.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\config.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\TimeZone.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\config.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\Blib2.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\TimeZone.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\protobuf-net.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\bin\Debug\protobuf-net.xml
+D:\Work\Repository\Private\CSHARP\Private Servers\Rainbow Saga Private Server\RainbowSagaServer\obj\Debug\RainbowServer.csproj.CopyComplete

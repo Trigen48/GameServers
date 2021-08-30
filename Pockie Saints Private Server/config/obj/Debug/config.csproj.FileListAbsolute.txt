@@ -1,0 +1,12 @@
+C:\Users\Trigenite\Desktop\TcpTools\config\bin\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\config\bin\Debug\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Debug\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Debug\config.csprojAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Debug\config.csproj.CoreCompileInputs.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Pockie Saints Private Server\config\bin\Debug\config.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Pockie Saints Private Server\config\bin\Debug\config.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Pockie Saints Private Server\config\obj\Debug\config.csprojAssemblyReference.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Pockie Saints Private Server\config\obj\Debug\config.csproj.CoreCompileInputs.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Pockie Saints Private Server\config\obj\Debug\config.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Pockie Saints Private Server\config\obj\Debug\config.pdb

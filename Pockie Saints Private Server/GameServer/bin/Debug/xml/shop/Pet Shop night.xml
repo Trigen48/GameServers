@@ -1,0 +1,12 @@
+<shop>
+	<shopinfo shopid="401015" shoptype="1" description="Pet Shop night"/>
+	<items>
+		<item id="3010001" costvalue="100000" time="0" costtype="5" limit="0"/>
+		<item id="3010002" costvalue="100000" time="0" costtype="5" limit="0"/>
+		<item id="3010003" costvalue="100000" time="0" costtype="5" limit="0"/>
+		<item id="3010004" costvalue="100000" time="0" costtype="5" limit="0"/>
+		<item id="3010005" costvalue="100000" time="0" costtype="5" limit="0"/>
+		<item id="3010006" costvalue="100000" time="0" costtype="5" limit="0"/>
+		<item id="3010033" costvalue="10000" time="0" costtype="5" limit="0"/>
+	</items>
+</shop>

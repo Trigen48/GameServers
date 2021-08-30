@@ -1,0 +1,17 @@
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\GameServer.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\GameServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\GameServer.pdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\protobuf-net.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\TimeZone.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\protobuf-net.pdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\protobuf-net.xml
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\blib.pdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Release\TimeZone.pdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Release\GameServer.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Release\GameServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Release\GameServer.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Release\GameServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Release\GameServer.pdb

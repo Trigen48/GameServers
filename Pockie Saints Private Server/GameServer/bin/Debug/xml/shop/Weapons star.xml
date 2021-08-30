@@ -1,0 +1,20 @@
+<shop>
+	<shopinfo shopid="201019" shoptype="1" description="Weapons star"/>
+	<items>
+		<item id="1010004" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1010005" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1010006" costvalue="1000" time="0" costtype="5" limit="0"/>
+		<item id="1010016" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1010017" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1010018" costvalue="2000" time="0" costtype="5" limit="0"/>
+		<item id="1010028" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1010029" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1010030" costvalue="4000" time="0" costtype="5" limit="0"/>
+		<item id="1010043" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1010044" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1010045" costvalue="6000" time="0" costtype="5" limit="0"/>
+		<item id="1010058" costvalue="8000" time="0" costtype="5" limit="0"/>
+		<item id="1010059" costvalue="8000" time="0" costtype="5" limit="0"/>
+		<item id="1010060" costvalue="8000" time="0" costtype="5" limit="0"/>
+	</items>
+</shop>

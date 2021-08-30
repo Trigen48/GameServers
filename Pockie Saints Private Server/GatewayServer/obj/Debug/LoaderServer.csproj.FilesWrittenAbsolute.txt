@@ -1,0 +1,5 @@
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttribute.cs
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\blib.dll.mdb

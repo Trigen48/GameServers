@@ -1,0 +1,18 @@
+<shop>
+	<shopinfo shopid="98" shoptype="1" description="GW Winner"/>
+	<items>
+		<item id="1110003" costvalue="50" time="0" costtype="3" limit="0"/>
+		<item id="2240002" costvalue="55" time="0" costtype="3" limit="0"/>
+		<item id="3110012" costvalue="888" time="0" costtype="3" limit="0"/>
+		<item id="3310001" costvalue="10" time="0" costtype="3" limit="0"/>
+		<item id="3310002" costvalue="20" time="0" costtype="3" limit="0"/>
+		<item id="3310003" costvalue="40" time="0" costtype="3" limit="0"/>
+		<item id="3320001" costvalue="10" time="0" costtype="3" limit="0"/>
+		<item id="3320002" costvalue="20" time="0" costtype="3" limit="0"/>
+		<item id="3320003" costvalue="30" time="0" costtype="3" limit="0"/>
+		<item id="8010001" costvalue="18" time="0" costtype="3" limit="0"/>
+		<item id="8010002" costvalue="38" time="0" costtype="3" limit="0"/>
+		<item id="8020001" costvalue="25" time="0" costtype="3" limit="0"/>
+		<item id="8020002" costvalue="65" time="0" costtype="3" limit="0"/>
+	</items>
+</shop>

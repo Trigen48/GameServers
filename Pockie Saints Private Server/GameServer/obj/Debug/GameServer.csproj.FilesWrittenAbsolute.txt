@@ -1,0 +1,12 @@
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttribute.cs
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Debug\GameServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\obj\Debug\GameServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\protobuf-net.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\protobuf-net.dll.mdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\protobuf-net.xml
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\blib.dll.mdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\config.dll.mdb
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\TimeZone.dll
+C:\Users\Trigenite\Desktop\TcpTools\GameServer\bin\Debug\TimeZone.dll.mdb

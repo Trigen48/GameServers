@@ -1,0 +1,256 @@
+﻿
+ public static List<int> CombatPower,Level,Wealth,Honor,Prestige;
+        static List<PlayerDetailRank> CombatRank = new List<PlayerDetailRank>();
+
+        static List<PlayerDetailRank> HonorRank = new List<PlayerDetailRank>();
+        static List<PlayerDetailRank> WealthRank = new List<PlayerDetailRank>();
+        static List<PlayerDetailRank> PrestigeRank = new List<PlayerDetailRank>();
+        static List<PlayerDetailRank> LevelRank = new List<PlayerDetailRank>();
+        public static List<PlayerDetailRank> PlayerDetails;
+
+        static Rankings()
+        {
+            CombatPower = new List<int>();
+            Level = new List<int>();
+            Wealth = new List<int>();
+            Honor = new List<int>();
+            Prestige = new List<int>();
+
+            PlayerDetails = new List<PlayerDetailRank>();
+        }
+
+        public static void PopulateUserRanks()
+        {
+
+            Honor.Clear();
+            
+            PlayerDetails.Clear();
+            CombatPower.Clear();
+            Level.Clear();
+            Prestige.Clear();
+            Wealth.Clear();
+
+            string[] Dir = System.IO.Directory.GetDirectories(Game.PlayerDir);
+            ByteArray ar;
+            foreach (string fl in Dir)
+            {
+                try
+                {
+                    if (!System.IO.File.Exists(fl + "/rank")) continue;
+                    ar = new ByteArray(fl + "/rank");
+
+                    PlayerDetailRank pr = new PlayerDetailRank();
+                    //pr.a_rank = (short)ar.ReadShort();
+                    pr.b_roleID = ar.ReadInt();
+                    pr.c_roleName = ar.ReadString();
+                    pr.d_vipLev = ar.ReadByte();
+                    pr.e_sex = ar.ReadByte();
+                    pr.f_pos = ar.ReadByte();
+                    pr.g_camp = ar.ReadByte();
+                    pr.h_guild = ar.ReadString();
+
+                    pr.CombatPower = ar.ReadInt();
+                    pr.Prestige = ar.ReadInt();
+                    pr.Wealth = ar.ReadInt();
+                    pr.Level = ar.ReadByte();
+                    pr.Honor = ar.ReadInt();
+
+
+                    ar.Close();
+                    PlayerDetails.Add(pr);
+
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        public static void BuildRanks()
+        {
+            BuildCombat();
+            BuildHonor();
+            BuildWealth();
+            BuildPrestige();
+            BuildLevel();
+        }
+
+        public static void BuildCombat()
+        {
+
+            List<int> l = new List<int>();
+
+            PlayerDetails.Sort((x, y) => x.CombatPower.CompareTo(y.CombatPower));
+
+            //ByteArray ot = new ByteArray();
+            //ot.WriteShort(PlayerDetails.Count);
+
+            lock (CombatRank)
+            {
+                CombatRank.Clear();
+                for (int x = 0; x < PlayerDetails.Count; x++)
+                {
+
+                   /* ot.WriteShort(x + 1);
+                    ot.WriteInt(PlayerDetails[x].b_roleID);
+                    ot.WriteString(PlayerDetails[x].c_roleName);
+                    ot.WriteByte(PlayerDetails[x].d_vipLev);
+                    ot.WriteByte(PlayerDetails[x].e_sex);
+                    ot.WriteByte(PlayerDetails[x].f_pos);
+                    ot.WriteByte(PlayerDetails[x].g_camp);
+                    ot.WriteString(PlayerDetails[x].h_guild);
+                    ot.WriteInt(PlayerDetails[x].CombatPower);*/
+                    // l.Add(PlayerDetails[x].b_roleID);
+                    CombatRank.Add(PlayerDetails[x]);
+                }
+
+
+             //   ot.PackArray(22010);
+            }
+           // CombatRank
+            
+        }
+
+        public static void BuildHonor()
+        {
+
+            List<int> l = new List<int>();
+
+            PlayerDetails.Sort((x, y) => x.Honor.CompareTo(y.Honor));
+
+            //ByteArray ot = new ByteArray();
+            //ot.WriteShort(PlayerDetails.Count);
+
+            lock (HonorRank)
+            {
+                HonorRank.Clear();
+                for (int x = 0; x < PlayerDetails.Count; x++)
+                {
+
+                    /* ot.WriteShort(x + 1);
+                     ot.WriteInt(PlayerDetails[x].b_roleID);
+                     ot.WriteString(PlayerDetails[x].c_roleName);
+                     ot.WriteByte(PlayerDetails[x].d_vipLev);
+                     ot.WriteByte(PlayerDetails[x].e_sex);
+                     ot.WriteByte(PlayerDetails[x].f_pos);
+                     ot.WriteByte(PlayerDetails[x].g_camp);
+                     ot.WriteString(PlayerDetails[x].h_guild);
+                     ot.WriteInt(PlayerDetails[x].CombatPower);*/
+                    // l.Add(PlayerDetails[x].b_roleID);
+                    HonorRank.Add(PlayerDetails[x]);
+                }
+
+
+                //   ot.PackArray(22010);
+            }
+            // CombatRank
+
+        }
+
+        public static void BuildWealth()
+        {
+
+            List<int> l = new List<int>();
+
+            PlayerDetails.Sort((x, y) => x.Wealth.CompareTo(y.Wealth));
+
+            //ByteArray ot = new ByteArray();
+            //ot.WriteShort(PlayerDetails.Count);
+
+            lock (WealthRank)
+            {
+                WealthRank.Clear();
+                for (int x = 0; x < PlayerDetails.Count; x++)
+                {
+
+                    /* ot.WriteShort(x + 1);
+                     ot.WriteInt(PlayerDetails[x].b_roleID);
+                     ot.WriteString(PlayerDetails[x].c_roleName);
+                     ot.WriteByte(PlayerDetails[x].d_vipLev);
+                     ot.WriteByte(PlayerDetails[x].e_sex);
+                     ot.WriteByte(PlayerDetails[x].f_pos);
+                     ot.WriteByte(PlayerDetails[x].g_camp);
+                     ot.WriteString(PlayerDetails[x].h_guild);
+                     ot.WriteInt(PlayerDetails[x].CombatPower);*/
+                    // l.Add(PlayerDetails[x].b_roleID);
+                    WealthRank.Add(PlayerDetails[x]);
+                }
+
+
+                //   ot.PackArray(22010);
+            }
+            // CombatRank
+
+        }
+
+        public static void BuildPrestige()
+        {
+
+            List<int> l = new List<int>();
+
+            PlayerDetails.Sort((x, y) => x.Prestige.CompareTo(y.Prestige));
+
+            //ByteArray ot = new ByteArray();
+            //ot.WriteShort(PlayerDetails.Count);
+
+            lock (PrestigeRank)
+            {
+                PrestigeRank.Clear();
+                for (int x = 0; x < PlayerDetails.Count; x++)
+                {
+
+                    /* ot.WriteShort(x + 1);
+                     ot.WriteInt(PlayerDetails[x].b_roleID);
+                     ot.WriteString(PlayerDetails[x].c_roleName);
+                     ot.WriteByte(PlayerDetails[x].d_vipLev);
+                     ot.WriteByte(PlayerDetails[x].e_sex);
+                     ot.WriteByte(PlayerDetails[x].f_pos);
+                     ot.WriteByte(PlayerDetails[x].g_camp);
+                     ot.WriteString(PlayerDetails[x].h_guild);
+                     ot.WriteInt(PlayerDetails[x].CombatPower);*/
+                    // l.Add(PlayerDetails[x].b_roleID);
+                    PrestigeRank.Add(PlayerDetails[x]);
+                }
+
+
+                //   ot.PackArray(22010);
+            }
+            // CombatRank
+
+        }
+
+        public static void BuildLevel()
+        {
+
+            List<int> l = new List<int>();
+
+            PlayerDetails.Sort((x, y) => x.Level.CompareTo(y.Level));
+
+            //ByteArray ot = new ByteArray();
+            //ot.WriteShort(PlayerDetails.Count);
+
+            lock (LevelRank)
+            {
+                LevelRank.Clear();
+                for (int x = 0; x < PlayerDetails.Count; x++)
+                {
+
+                    /* ot.WriteShort(x + 1);
+                     ot.WriteInt(PlayerDetails[x].b_roleID);
+                     ot.WriteString(PlayerDetails[x].c_roleName);
+                     ot.WriteByte(PlayerDetails[x].d_vipLev);
+                     ot.WriteByte(PlayerDetails[x].e_sex);
+                     ot.WriteByte(PlayerDetails[x].f_pos);
+                     ot.WriteByte(PlayerDetails[x].g_camp);
+                     ot.WriteString(PlayerDetails[x].h_guild);
+                     ot.WriteInt(PlayerDetails[x].CombatPower);*/
+                    // l.Add(PlayerDetails[x].b_roleID);
+                    LevelRank.Add(PlayerDetails[x]);
+                }
+
+
+                //   ot.PackArray(22010);
+            }
+            // CombatRank
+
+        }

@@ -1,0 +1,28 @@
+<shop>
+	<shopinfo shopid="8" shoptype="1" description="Bound Shop"/>
+	<items>
+		<item id="1110001" costvalue="13" time="0" costtype="2" limit="0"/>
+		<item id="1110002" costvalue="75" time="0" costtype="2" limit="0"/>
+		<item id="1213001" costvalue="45" time="0" costtype="2" limit="0"/>
+		<item id="1214001" costvalue="20" time="0" costtype="2" limit="0"/>
+		<item id="1214002" costvalue="48" time="0" costtype="2" limit="0"/>
+		<item id="1216001" costvalue="20" time="0" costtype="2" limit="0"/>
+		<item id="1216002" costvalue="48" time="0" costtype="2" limit="0"/>
+		<item id="3011001" costvalue="7" time="0" costtype="2" limit="0"/>
+		<item id="3012006" costvalue="7" time="0" costtype="2" limit="0"/>
+		<item id="3012007" costvalue="19" time="0" costtype="2" limit="0"/>
+		<item id="3310001" costvalue="13" time="0" costtype="2" limit="0"/>
+		<item id="3320001" costvalue="19" time="0" costtype="2" limit="0"/>
+		<item id="3320002" costvalue="38" time="0" costtype="2" limit="0"/>
+		<item id="6010001" costvalue="13" time="0" costtype="2" limit="0"/>
+		<item id="6040083" costvalue="25" time="0" costtype="2" limit="0"/>
+		<item id="6040084" costvalue="20" time="0" costtype="2" limit="0"/>
+		<item id="8010001" costvalue="45" time="0" costtype="2" limit="0"/>
+		<item id="8020001" costvalue="65" time="0" costtype="2" limit="0"/>
+		<item id="8030001" costvalue="45" time="0" costtype="2" limit="0"/>
+		<item id="8220001" costvalue="35" time="0" costtype="2" limit="0"/>
+		<item id="8230001" costvalue="35" time="0" costtype="2" limit="0"/>
+		<item id="8240001" costvalue="35" time="0" costtype="2" limit="0"/>
+		<item id="3110042" costvalue="1500" time="0" costtype="2" limit="1"/>
+	</items>
+</shop>

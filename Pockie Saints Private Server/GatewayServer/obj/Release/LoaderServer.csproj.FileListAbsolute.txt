@@ -1,0 +1,12 @@
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Release\LoaderServer.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Release\LoaderServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Release\LoaderServer.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Release\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Release\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Release\blib.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Release\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Release\LoaderServer.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Release\LoaderServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Release\LoaderServer.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Release\LoaderServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Release\LoaderServer.pdb

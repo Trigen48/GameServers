@@ -1,0 +1,10 @@
+<shop>
+	<shopinfo shopid="9" shoptype="1" description="Mount & Pet"/>
+	<items>
+		<item id="3010036" costvalue="860" time="0" costtype="3" limit="0"/>
+		<item id="3010013" costvalue="860" time="0" costtype="3" limit="1"/>
+		<item id="3010019" costvalue="860" time="0" costtype="3" limit="1"/>
+		<item id="3010020" costvalue="860" time="0" costtype="3" limit="1"/>
+		<item id="3110012" costvalue="1110" time="0" costtype="3" limit="1"/>
+	</items>
+</shop>

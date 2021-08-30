@@ -1,0 +1,7 @@
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\ConnectionServer.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\ConnectionServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\ConnectionServer.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\bin\Debug\ConnectionServer.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\bin\Debug\ConnectionServer.pdb
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\ConnectionServer.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\ConnectionServer.pdb

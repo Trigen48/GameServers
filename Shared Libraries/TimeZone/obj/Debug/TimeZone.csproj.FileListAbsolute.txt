@@ -1,0 +1,6 @@
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\TimeZone\bin\Debug\TimeZone.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\TimeZone\bin\Debug\TimeZone.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\TimeZone\obj\Debug\TimeZone.csprojAssemblyReference.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\TimeZone\obj\Debug\TimeZone.csproj.CoreCompileInputs.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\TimeZone\obj\Debug\TimeZone.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\TimeZone\obj\Debug\TimeZone.pdb

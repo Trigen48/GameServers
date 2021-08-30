@@ -1,0 +1,5 @@
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\bin\Debug\protobuf-net.dll
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\obj\Debug\protobuf-net.dll
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttribute.cs
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\bin\Debug\protobuf-net.dll.mdb
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\obj\Debug\protobuf-net.dll.mdb

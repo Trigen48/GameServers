@@ -1,0 +1,5 @@
+C:\Users\Trigenite\Desktop\TcpTools\config\bin\Release\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\config\bin\Release\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Release\config.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Release\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Release\config.pdb

@@ -1,0 +1,7 @@
+mail,{p},Rewards,Some Rewards,2260003,99
+mail,{p},Rewards,Some Rewards,2260003,99
+mail,{p},Rewards,Some Rewards,2261003,99
+mail,{p},Rewards,Some Rewards,2262003,99
+mail,{p},Rewards,Some Rewards,2263003,99
+mail,{p},Rewards,Some Rewards,2264003,99
+ShowMail,{p}

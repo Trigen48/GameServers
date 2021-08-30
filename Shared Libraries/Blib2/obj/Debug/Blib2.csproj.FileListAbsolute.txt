@@ -1,0 +1,17 @@
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\bin\Debug\zlib32.dll
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\bin\Debug\zlib64.dll
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\bin\Debug\Blib2.dll
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\bin\Debug\Blib2.pdb
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\bin\Debug\zlibnet.dll
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\obj\Debug\Blib2.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\obj\Debug\Blib2.dll
+C:\Users\Trigenite\Documents\Visual Studio 2012\Projects\Rainbow\Blib2\obj\Debug\Blib2.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\bin\Debug\zlib32.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\bin\Debug\zlib64.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\bin\Debug\Blib2.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\bin\Debug\Blib2.pdb
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\obj\Debug\Blib2.csprojAssemblyReference.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\obj\Debug\Blib2.csproj.CoreCompileInputs.cache
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\obj\Debug\Blib2.csproj.CopyComplete
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\obj\Debug\Blib2.dll
+D:\Work\Repository\Private\CSHARP\Private Servers\Shared Libraries\Blib2\obj\Debug\Blib2.pdb

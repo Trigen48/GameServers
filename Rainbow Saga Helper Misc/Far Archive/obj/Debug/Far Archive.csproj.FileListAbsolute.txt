@@ -1,0 +1,18 @@
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far_Archive.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far Archive.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\Far Archive.exe
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\Far Archive.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far Archive.exe
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far Archive.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\zlib32.dll
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\zlib64.dll
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\zlibnet.dll
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\FarLib.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\blib.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far_Archive.Main.resources
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\Icon1.ico
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far Archive.csprojAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far Archive.csproj.CoreCompileInputs.cache
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\bin\Debug\FarLib.exe
+C:\Users\Trigenite\Desktop\TcpTools\Far Archive\obj\Debug\Far Archive.csproj.CopyComplete

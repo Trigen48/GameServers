@@ -1,0 +1,28 @@
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\bin\Debug\LoaderServer.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\bin\Debug\LoaderServer.pdb
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\bin\Debug\blib.dll
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\bin\Debug\blib.pdb
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\LoaderServer.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\GameServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\LoaderServer.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\LoaderServer.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\ConnectionServer\obj\Debug\LoaderServer.pdb
+C:\Users\Teboho\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.csprojResolveAssemblyReference.cache
+C:\Users\Teboho\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.exe
+C:\Users\Teboho\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\LoaderServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\LoaderServer.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\LoaderServer.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\blib.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.exe
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\LoaderServer.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\ConnectorX.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\ConnectorX.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\GatewayServer.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\gateway.exe.config

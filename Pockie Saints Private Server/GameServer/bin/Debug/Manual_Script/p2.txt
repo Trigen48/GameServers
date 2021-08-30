@@ -1,0 +1,8 @@
+mail,{p},Rew,Test,1010134,1
+mail,{p},Rew,Test,1020128,1
+mail,{p},Rew,Test,1021128,1
+mail,{p},Rew,Test,1022128,1
+mail,{p},Rew,Test,1023128,1
+mail,{p},Rew,Test,1024128,1
+mail,{p},Rew,Test,1025128,1
+ShowMail,{p}

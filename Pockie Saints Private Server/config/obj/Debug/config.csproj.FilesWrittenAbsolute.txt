@@ -1,0 +1,5 @@
+C:\Users\Trigenite\Desktop\TcpTools\config\bin\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttribute.cs
+C:\Users\Trigenite\Desktop\TcpTools\config\bin\Debug\config.dll.mdb
+C:\Users\Trigenite\Desktop\TcpTools\config\obj\Debug\config.dll.mdb

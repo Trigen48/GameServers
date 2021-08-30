@@ -1,0 +1,18 @@
+<shop>
+	<shopinfo shopid="7" shoptype="1" description="Pet Item"/>
+	<items>
+		<item id="3011002" costvalue="13" time="0" costtype="3" limit="0"/>
+		<item id="3011003" costvalue="25" time="0" costtype="3" limit="0"/>
+		<item id="3012006" costvalue="3" time="0" costtype="3" limit="0"/>
+		<item id="3012007" costvalue="7" time="0" costtype="3" limit="0"/>
+		<item id="3012008" costvalue="19" time="0" costtype="3" limit="0"/>
+		<item id="3012009" costvalue="63" time="0" costtype="3" limit="0"/>
+		<item id="3018002" costvalue="63" time="0" costtype="3" limit="0"/>
+		<item id="3018003" costvalue="610" time="0" costtype="3" limit="0"/>
+		<item id="3019001" costvalue="125" time="0" costtype="3" limit="0"/>
+		<item id="6040153" costvalue="13" time="0" costtype="3" limit="0"/>
+		<item id="6040154" costvalue="38" time="0" costtype="3" limit="0"/>
+		<item id="8040002" costvalue="19" time="0" costtype="3" limit="0"/>
+		<item id="8040003" costvalue="63" time="0" costtype="3" limit="0"/>
+	</items>
+</shop>

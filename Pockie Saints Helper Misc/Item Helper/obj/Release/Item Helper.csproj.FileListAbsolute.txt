@@ -1,0 +1,31 @@
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\bin\Release\Item Helper.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\bin\Release\Item Helper.pdb
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Release\Item_Helper.Find_Form.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Release\Item_Helper.Main.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Release\Item_Helper.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Release\Item_Helper.Results.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Release\Item Helper.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Release\Item Helper.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Release\Item Helper.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item Helper.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.ExplorerControl.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.Explorer.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.Find_Form.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.ItemsView.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.Main.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.MultiAdd.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.NewShop.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.PackBuild.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.Results.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.SelectOne.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.Shop_Manager.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item_Helper.ShopControl.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item Helper.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item Helper.exe
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Release\Item Helper.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Release\Item Helper.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Release\Item Helper.exe
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Release\Item Helper.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Release\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Release\blib.pdb

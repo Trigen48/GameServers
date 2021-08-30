@@ -1,0 +1,6 @@
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\bin\Release\protobuf-net.xml
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\bin\Release\protobuf-net.dll
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\bin\Release\protobuf-net.pdb
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\obj\Release\protobuf-net.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\obj\Release\protobuf-net.dll
+C:\Users\Trigenite\Desktop\Logic\protobuf-net\obj\Release\protobuf-net.pdb

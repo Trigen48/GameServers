@@ -1,0 +1,3665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A45C0D7D-BBCE-48FA-A817-25B90BBF8060}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RainbowServer</RootNamespace>
+    <AssemblyName>RainbowServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="protobuf-net, Version=2.0.0.668, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Logic\proto2\Full\net20\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.Serialization" />
+    <Reference Include="zlibnet">
+      <HintPath>..\FarLib\zlibnet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CProto\Account.cs" />
+    <Compile Include="CProto\Friends.cs" />
+    <Compile Include="GSystem\Game\CharData.cs" />
+    <Compile Include="GSystem\Players\Accounts.cs" />
+    <Compile Include="GSystem\Players\Player.cs" />
+    <Compile Include="GSystem\World\Channels.cs" />
+    <Compile Include="GSystem\World\gsWorld.cs" />
+    <Compile Include="GSystem\World\SceneDungeon.cs" />
+    <Compile Include="Hack.cs" />
+    <Compile Include="Handler\RpcCommand.cs" />
+    <Compile Include="Handler\RpcCommands.cs" />
+    <Compile Include="handle\MountDgnCtrl.cs" />
+    <Compile Include="ProtoMsg\db\ActivityData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ActivityInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ActivityQuestChain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\AllBodyTouchTimesInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ArenaData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ArenaRankData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ArenaRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\AstrologyBagData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\AstrologyData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\AstrologyDivineData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\AstrologyEquipData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\AstrologyEtcData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\Attachment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\Attachments.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\BlockInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\BodyTouchTimesInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\CheckPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DartItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DartLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DartLogReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DartLogResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DartLogW.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DeleteMail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\Demander.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DgnData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DgnEvalution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DgnHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DgnInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DgnTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DgnTowerPassAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DrawItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\DungeonAreaAwardStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\EnchantProp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\EnchantPropsOnEquip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\EnterFamilyActivityDgnResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ExplorationData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ExplorationInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ExplorationLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FamilyWorshipMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FamilyWorshipMemberListReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FamilyWorshipMemberListResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FamilyWorshipMoney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchMailAttachment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchMailAttachmentRet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchNewServerGiftReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchNewServerGiftResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchOpenServerGiftReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchOpenServerGiftResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchOpenTestGiftReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FetchOpenTestGiftResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyActNotifyEnter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyAppInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyApplicantList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyBrief.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyLogInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyMemberList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyMemberManor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyNews.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyPetHistory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyRecommend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmlyStoneGiftId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmyActBuyHeatReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmyActBuyTicketReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmyActBuyTicketResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmyActGatherResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmyActGetInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FmyActGetInfoResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\Friend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FunctionSwitchInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\FunctionSwitchRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\GetLimitItemRemainReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\GetLimitItemRemainRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\GetMailDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\GetMailList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\Item.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ItemProp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\LuckTurntableDraw.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MagicDartsData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MailBody.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MailBrief.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MailList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorAcceptAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorAcceptReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorApplyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorApplyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorApplyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorFireAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorFireReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGetInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGetInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGetListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGetListReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGetLogsAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGetLogsReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGuide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGuideAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorGuideReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorLogInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorLogList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorMainInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorMainInfoSync.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorMemberInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorMemberInfoSync.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorMemberList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorModifyTextAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorModifyTextReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorObtainAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorObtainReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorQuitAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorQuitReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorReportAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorReportReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MentorReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MopupInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MultiDgnTimes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\MultiGroupClash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\NotifyFamilyWorshipMemberAway.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\NotifyFmlyStoneUpgrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\NotifyNewMail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\PartyBlessingData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\PickUpSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\Preference.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\PreferenceGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ProgressInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\QuestCtrls.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\QuestInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\QuestRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\QuestTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\ReqInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\SaveEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\SendMailC2S.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\SendMailC2SRet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\SetNpcStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\TimeLimitDgnInDB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\TowerProgressInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\TurntableDrawData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\UpdateFamilyWorshipMoney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\db\VechantEquip.cs" />
+    <Compile Include="ProtoMsg\db\VechileEquipProp.cs" />
+    <Compile Include="ProtoMsg\db\VolumeSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\game\UnitProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Ability.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AbilityList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AccelerateMopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AccelerateMopupAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ActivityRankAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ActivityStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ActivityValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddActivityTicketAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddActivityTicketReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddCharEnergy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddFriend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddFriendAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddToBlacklist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddToGrpDgnQueueAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddToGrpDgnQueueReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddToGVGDgnQueueReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AddToGVGDgnQueueRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AllowFamilyTalk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AntiCheatReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Applicant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ApplicantConfirmResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ApplyForFamilyLeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ApplyIsRejected.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ArenaCombatInfoNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ArenaDgnInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ArenaInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ArenaRankListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ArenaRankListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ArenaTeamOperate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ArenaTeamOperateResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AssignLeaderReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AssignLeaderResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AttachSpritePet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\AutoPlayDisplayInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BeadsRankElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BeadsRankListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Bell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BellInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BellInfoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BellInfoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BossInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BossRushCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BossRushInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BossStats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BroadcastMarriageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Buff.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BufferInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuffInfos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuffModifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuffUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuyCommodityItemRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuyCommodityItemResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuyLimitItemRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuyLimitItemResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuyMachinariumDgnTimesReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\BuyMachinariumDgnTimesResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CancelFamilyApply.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CancelMopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CancelMopupAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CarReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CatGarden.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CdKeyOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChangeFamilyPetNameReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChangeSceneAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChangeSceneRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChangeSceneResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharEnergyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharEquipInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharExtraInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChargeBonusInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChargeDragonInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChargeGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChargeGifts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChargeRewardInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharInfoUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharPersonReborn.cs" />
+    <Compile Include="ProtoMsg\msg\CharRankDetailRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharRankDetailResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CharRankListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Chat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CheckFamilyName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CheckFamilyNameAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ChooseDungeonCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CleanArenaDefeatsRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CleanArenaDefeatsResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ClearAutoPlayInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ClearFamilyUpgradeCDAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ClearFamilyUpgradeCDReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ClientErrorMsgInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ClosePrepareConfirmDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CoMarketOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CombotPower.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Commodity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CommodityInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CommodityItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CommoditySet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ConsumeBonusInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ConsumeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ConsumeRankElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ConsumeRankListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ContinuousLogin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateCharRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateCharResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateCharTimeOut.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateDynReactor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateFamilyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateFamilyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateGroupReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreateGroupResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreditsRankElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CreditsRankListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\CurrentInActivityResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DailyPayData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DailyRightsEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DailyRightsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Dead.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeathBodyOccurInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeathBodyRemoveInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeathBodyResetInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeathBodyTouchTimesInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DelFriend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DelFromBlacklist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeliveryConfigUsed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeliveryConfigUsedItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeliveryExtraInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeliveryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeliveryInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DeliveryInfoResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DelTempFriend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DemoteFamilyMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DenyApplyForFamilyLeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Designation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DesignationInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DestroyFamilyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DestroyFamilyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnActiveInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnCure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnCurTargetInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnDisplayInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnEvaluationInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnKillMobNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DgnTimeElapse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Direction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DisableCharRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DisableCharResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DisappearScenceTrigger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DispatchBoxReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DispatchBoxResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DivorceCancelConfirmReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DivorceCancelConfirmResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DivorceCancelReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DivorceConfirmReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DivorceConfirmResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DivorceReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DoClearNoticeInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DonateCrystalToFamilyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DonateCrystalToFamilyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DonateMoneyToFamilyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DonateMoneyToFamilyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DoSetNoticeInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DragonSoul.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DragonSoulInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DropItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DropItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DungeonCardList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DungeonDuration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DungeonEnergyUsedAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DungeonPlayerInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\DynReactorEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnableCharRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnableCharResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnchantProps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EncryptInfoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EncryptInfoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EndBatchMopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnemySpotted.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterArenaHall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterDungeon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterFamilyBaseDgn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterFamilyPetDgnReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterMountDgnReq.cs" />
+    <Compile Include="ProtoMsg\msg\EnterStoryMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterToMachinariumDgnReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterTowerReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterWorldBossDungeon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterZoneAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterZoneRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EnterZoneResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EquipmentInventory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\EquipmentSlot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ExitStoryMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Exp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ExpMoneyConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ExpMoneyItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyCrystalDonate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyManorDungeonInform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyManorEnterReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyManorEnterResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyManorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyManorMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyManorTowerInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FamilyWorshipData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FeedFamilyPetReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FestivalItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Fight1v1Ack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Fight1v1Req.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FinishRealNameAuth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FixedPayActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FmlyPet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ForbidFamilyTalk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\FunctionOpenNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GainNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GameObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetActivateMapsAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetActivityPayGiftAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetActivityPayGiftRes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetActivityPayInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetActivityPayInfoRes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetActivityStatusAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetActivityStatusReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetAutoPlayInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetAutoPlayInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetBlackList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetBlackListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetBodyTouchTimesResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetBossStats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetCharEnergy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetChargeBonusInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetChargeBonusInfoRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetChargeDragonAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetChargeDragonReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetChargeRewardAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetChargeRewardReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetCharInfoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetCharInfoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetCommodityInfoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetCommodityInfoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetConsumeBonusInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetConsumeBonusInfoRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetDeliveryRewardReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetDeliveryRewardResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetDgnInfoOfAreaMapAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetDgnInfoOfAreaMapReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetDngAreaPassAwardReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetDungeonEnergyUsed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetEliteRecentClassCDgnAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetEliteRecentClassCDgnReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyApplicants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyApplicantsAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyApplyListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyApplyRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyApplyRecordAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyBrief.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyBriefAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyID.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyIDAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyLogs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyLogsAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyManorDailyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyManorDailyResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyManorInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyManorInfoResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyManorSelfResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyMembers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyMembersAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyNameAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyNews.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyNewsAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyPetDgnHistoryAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyPetDgnHistoryReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyPetInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyPetInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyRankList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFamilyRankListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFinishDgnIdsAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFriendList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetFriendListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetGroupApplicants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetGroupApplicantsResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetGroupInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetGroupInfoResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetGrpDgnQueueInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetGrpDgnQueueInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetHiddenStoryObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetHiddenStoryObjectsAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetLimitTimeSaleStateReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetLuckyDrawDataAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetLuckyDrawDataReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMachinariumDgnTimesReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMachinariumDgnTimesResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetManorMemberReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetManorMemberResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMarriageReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMarriageResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMergeChargeAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMergeChargeReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMopupConsumeInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMopupConsumeInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMopupInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMountDgnStateReq.cs" />
+    <Compile Include="ProtoMsg\msg\GetMountDgnStateResp.cs" />
+    <Compile Include="ProtoMsg\msg\GetMultiChargeRewardAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMultiChargeRewardReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMyOrdainInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetMyOrdainInfoResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetNearbyGroupsReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetNearbyGroupsResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetNpcVisible.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetOfflineAFKAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetOneTouchBodyEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetOneTouchBodyInFieldEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetOrdainWeddingListReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetOrdainWeddingListResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetPlayerGVGStatusReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetPlayerGVGStatusRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetRecentClassCDgnAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetRecentClassCDgnReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetReqList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetReqListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetStoryProgress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetStoryProgressAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTempFriendList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTempFriendListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTimeLimitDgnAwardReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTimeLimitDgnListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTimeLimitDgnListReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerFirstPlayersAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerFirstPlayersReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerMopInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerMopInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerRankAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetTowerRankReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetWorldBossActiveInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetZoneBossInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetZoneBossInfoResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GetZoneList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Gift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GiftCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GiftGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GodshipInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GotoDungeonEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GroupBrief.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GroupDungeonQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GroupHpMpUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GroupInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GroupMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GroupMemberJoinArenaResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GroupSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrowingFund.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrpDgnApplyConfirm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrpDgnApplyConfirmAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrpDgnPrepareConfirm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrpDgnPrepareConfirmAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrpDgnPrepareConfirmList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrpInviteConfirmReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\GrpInviteConfirmResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\HandoverFamily.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\HaveExistedDungeon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\HaveExistedDungeonRet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Heartbeat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\HideStoryObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\HitTransportArea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\HpMpInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Hurt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Invitee.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\InviteGroupMemberJoinArena.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\InviteToFamilyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\InviteToFamilyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\InviteToJoinGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\InviteToJoinGroupResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ItemDisappear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ItemInventory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ItemOwnInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ItemOwnNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ItemReplicaInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\JoinArenaPlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\JoinFamilyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\JoinFamilyReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\JoinFamilyReqSentSucc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\JoinSeabedPlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KickFamilyMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KickOutGroupReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KickOutGroupResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KillerModeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KillerModeReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KillerModeResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KillMobsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\KnockBack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\L2pwdData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveArenaHall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveDungeon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveFamily.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveFamilyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveGroupReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveGroupResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveGrpDgnQueueReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveGVGDgnQueueReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LeaveGVGDgnQueueRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LevelBuy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LevelBuyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LevelGiftRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LevelUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LimitItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LimitItemBuyList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LimitTimeSaleItemListReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LimitTimeSaleItemListRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LimitTimeSaleSyncInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LoadingDurations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LoadingResStatistics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LoadResource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LoginPhase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LoginRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LoginResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LogoutAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LogoutNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LuckyDrawAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LuckyDrawGetAwardReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LuckyDrawItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\LuckyDrawReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MagicsuitUp.cs" />
+    <Compile Include="ProtoMsg\msg\MallCommodities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MallCommoditiesSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MallCommodityListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MallCommodityListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MallCommoditySetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MallCommoditySetResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MarriageData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MarriageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MentorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MergeChargeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MicroGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MobReplicaInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MobTalk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ModifyFamilyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ModifyFamilyNotice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MonthFeedback.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MopUpInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MountDgnCurrentInfo.cs" />
+    <Compile Include="ProtoMsg\msg\MountDgnData.cs" />
+    <Compile Include="ProtoMsg\msg\MountDgnGift.cs" />
+    <Compile Include="ProtoMsg\msg\MountDgnGiftReq.cs" />
+    <Compile Include="ProtoMsg\msg\MountDgnInfo.cs" />
+    <Compile Include="ProtoMsg\msg\MountInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MoveToward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MultiChargeRewardInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MultiGroupDungeonInform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MultiPayActData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MultiPayActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MultiSectionPayInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MysticStoreInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\MysticStoreItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NewbieGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NewGuid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NewMysticBusinessInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NewMysticBusinessItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NewMysticStoreInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NewMysticStoreItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NewServerBenefit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyActivateMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyArenaMatchState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyArenaRoster.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyDeliveryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyDugeonScore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyDungeonFinish.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyFmlyBaseTimerMsg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyFmlyPetDgnAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyFmlyPetNPCInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyMopupStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyNewApplicantComing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyOnlineHourToClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyPlayerForbidJoinArena.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyRankActivityStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyServerStartTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifySimpleScore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyStoryFinish.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyWorldBossDuration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\NotifyWorldBossRankList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1Info.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1OppInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1OppInfoResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1Record.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1RecordReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1RecordResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1Selected.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1TimeStamps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1WorldRankReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLine1V1WorldRankResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OfflineAFKAwardResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OfflineCharInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLineProp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLineRankElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OffLineRecords.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OnlineAFK.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OnlineAFKNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OnlineAFKRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OnlineAFKResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OnlineAFKState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OpenServerBenefit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OpenTestGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OperateReactor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OrdainWeddingConfirmReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OrdainWeddingConfirmResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OrdainWeddingInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\OrdainWeddingReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PartEnchantProp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PeriodicBuffResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Pet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetBookRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetBookResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetDismissNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetDismissRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetDismissResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetJoinBattleNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetJoinBattleRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetJoinBattleResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetRankDescript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetRankListResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetReplicaInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetRespawnRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetRespawnResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetSkill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PetSyncAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PiggyBank.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Pills.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PitCar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PlayAnimation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PlayEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PlayerArenaInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PlayerCombatInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PlayerEnterScenarioNotifyBodyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PlayerInitNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PlayerReplicaInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PromoteFamilyMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PromptRealNameAuth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PromptRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PropPill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PushItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\PushItemInfos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\QueryCharInfoRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\QueryCharInfoResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\QueryDgnActiveInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\QueryDgnActiveInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\QueryRealNameAuth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Quest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\QuestList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\QuickAddToGrpDgnReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Qzone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RankElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RankListRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ReachActValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ReactorEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Reborn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RebornInBossRushDgnAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RebornInBossRushDgnReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RebornInTowerReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RefreshCarReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RegainInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RegainNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RegisterMarriageConfirmReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RegisterMarriageConfirmResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RegisterMarriageReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ReliveFactor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RemoveSpritePet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ReplicaInform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ReplicaSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RequestToJoinGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RequestToJoinGroupResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ResetTowerAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ResetTowerReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RewardItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RingLevelupReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RobCarReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RobCarResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RobCarResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\RobCarSelect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Root.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SaveNewGuidMark.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SaveNewGuidMarkResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ScenceTriggerBaseInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ScenceTriggerConditions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ScenceTriggers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SceneDamage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SceneEnergize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ScheduleFamilyPetDgnAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ScheduleFamilyPetDgnReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Seabed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SeabedCharDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SeabedDetail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SeabedGrop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SeabedOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SeabedOpRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SeabedOtherInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SearchFriend.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SearchFriendAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SearchInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SendFlowersReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SendFlowersResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SendInvitationReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SendRankInfoW2C.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetAutoPlayInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetNpcVisible.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetPetFullHeal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetPetHpHealThreshold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetRebornOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetRebornOptionAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetStoryMobPos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetStoryMobStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetStoryProgress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SetStoryProgressAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ShowDungeonWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ShowGrpDungeonsChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ShowPortals.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ShowStoryObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SignData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SingleApplyDivorceReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SingleDungeonInfoNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SingleForceDivorceReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SingleMopupEndNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SingleMopupStartNotify.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Skill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillBlink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillCoolDown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillCoolDownInfo.cs" />
+    <Compile Include="ProtoMsg\msg\SkillDamage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillEnegize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillEnergyStar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillHeal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillInvincible.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillMiss.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillRepel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SkillStart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Slot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SpecialState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Speed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\StartBatchMopupAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\StartBatchMopupReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\StartDelivery.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SwitchZoneRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SwitchZoneResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncAllReactors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncFamilyPetExpRate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncGameObjects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncGatherAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncLimitTimeSaleState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncMaxHpMp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncVipUsedInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncWorldBossDamage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SyncXp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SysPill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\System.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\SystemPrompt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Teleport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TeleportRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TencentFriendRecall.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TencentLvGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TencentVIP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TencentVipInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TGWHeartbeat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ThreeDiabetes.cs" />
+    <Compile Include="ProtoMsg\msg\ThreeDiabetesInfo.cs" />
+    <Compile Include="ProtoMsg\msg\ThreeDiabetesMap.cs" />
+    <Compile Include="ProtoMsg\msg\ThreeDiabetesMapData.cs" />
+    <Compile Include="ProtoMsg\msg\ThreeDiabetesMove.cs" />
+    <Compile Include="ProtoMsg\msg\ThreeDiabetesMoveStep.cs" />
+    <Compile Include="ProtoMsg\msg\ThrowableItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ThrowableItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ThrowItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TimeLimitAwardItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TimeLimitDgnFail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TimeLimitDgnStart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TimeLimitDgnSucc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TimeLimitDungeon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TimeSyncRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TimeSyncResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TowerFloorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TowerRankInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TransferProfession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TriggerMobInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\TripleInfo.cs" />
+    <Compile Include="ProtoMsg\msg\TripleRankElement.cs" />
+    <Compile Include="ProtoMsg\msg\TripleRankListResponse.cs" />
+    <Compile Include="ProtoMsg\msg\UpdateAvatar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateCheckPoint.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateCrystalBalance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateDesignationDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateDynamicObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateExpiredEquip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateGameObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateJoinArenaState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateMarriageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdatePetCaressInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdatePetHpBank.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdatePetProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdatePlayerArenaData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdatePlayerKillMobsInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdatePlayerProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdatePreferencesRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpdateSystemSetRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpgradeFamilyLevelReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpgradeFamilySkill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpgradeFamilySkillResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpgradeFmlyShopLvlReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpgradeFmlySkillLvlReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpgradeSkill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UpgradeSkillResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\UseWeddingInvationRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ValidateCharNameRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ValidateCharNameResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VariableList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VechileSyncAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VipAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VipAwardAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VipAwardReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VipExtraInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VIPInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VipPrivilege.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VipPrivilegeItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\VisibleRectDebug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WBSBuffInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WeddingMsg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WingInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WorldBossActiveInfoAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WorldBossRank.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WorldBossStrengthen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WorldBossStrengthenAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\WorldMapInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\XoEnterDgn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\XOInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\XoInfoReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\XOMovePosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\XoNotifyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\XoRank.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\XoRankItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ZoneBossInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ZoneBossOwner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ZoneInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\msg\ZoneListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActivityCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActivityGetInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActivityShowBtn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActivityUpdateCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActivityUpdateData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActivityUpdateNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActivityUpdateQuestChain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActyRewds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ActyRewdUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AddBossRushTimes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AddFamilyWorshipMoney.cs" />
+    <Compile Include="ProtoMsg\rpc\AddItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AddPet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AddPetExp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AddPushItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AdvancedEnchant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AstrologyRpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AstrologyRpcAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\AutoVechile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BackwardBossRushLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BagItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BagItemPropInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BatchBuyItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BatchSellItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Beautician.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BellOperate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BlessParty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyMysticStoreItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyMysticStoreItemAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyNewMysticBusinessItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyNewMysticBusinessItemAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyNewMysticStoreItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyNewMysticStoreItemAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\BuyPushItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CanShowMysticBusiness.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CaressPet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CatGardenOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ChangeEquipment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ChangeGenderReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ChangeMountEquipment.cs" />
+    <Compile Include="ProtoMsg\rpc\ChangePetName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ChargeGiftMessge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ChargeLifeCrystalReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ChargeLifeCrystalResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CheckNewMysticBusinessCanShow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CheckNewMysticBusinessItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CheckNewMysticBusinessItemAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CheckNewMysticBusinessItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CheckNewMysticStoreItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CheckNewMysticStoreItemAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\CoMarketOpRpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Consume.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DailyRightsReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DailyRightsResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DecomposeEquip.cs" />
+    <Compile Include="ProtoMsg\rpc\DesignationOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DiabetesMoveBox.cs" />
+    <Compile Include="ProtoMsg\rpc\DiabetesOp.cs" />
+    <Compile Include="ProtoMsg\rpc\DoActivityXchg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DoDailyRefresh.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DoFamilyWorship.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DoItemTurnin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DoItemXchg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DoMagicDarts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DoTurntableDraw.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\DragonSoulOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Enchant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\EquipDegreeUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\EquipmentConvert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\EquipOnInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\EquiponPreDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ExplorationRpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ExplorationRpcAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\FeedPet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\FestivalGiftInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\FetchLevelGiftResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\FightBossRushCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\FODisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ForgeEquip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ForgeMountEquip.cs" />
+    <Compile Include="ProtoMsg\rpc\ForwardBossRushLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\FreePet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GainNewbieGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GatherGameObj.cs" />
+    <Compile Include="ProtoMsg\rpc\GatherStart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GatherStop.cs" />
+    <Compile Include="ProtoMsg\rpc\GemSocketRpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetActivityXchgCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetActyItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetActyItemResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetActyRewdInfo.cs" />
+    <Compile Include="ProtoMsg\rpc\GetAllPushItemInfos.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetBossRushAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetBossRushDailyAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetBossRushFinalAward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetBossRushInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetDailyPayReward.cs" />
+    <Compile Include="ProtoMsg\rpc\GetDiabetes.cs" />
+    <Compile Include="ProtoMsg\rpc\GetDropItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetDropItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetFamilyWorshipData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetFestival.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetFestivalReult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetFixedPayActGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetFixedPayActGiftAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetFixedPayActInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetItemXchgCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetLevelGiftInfo.cs" />
+    <Compile Include="ProtoMsg\rpc\GetLimitItemRemain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetLimitItemRemainAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetLoopQuestRewards.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetMagicDartsData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\getMagicsuitUpReq.cs" />
+    <Compile Include="ProtoMsg\rpc\getMagicsuitUpResp.cs" />
+    <Compile Include="ProtoMsg\rpc\GetMonthFeedbackGiftReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetMonthFeedbackGiftResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetMonthFeedbackInfo.cs" />
+    <Compile Include="ProtoMsg\rpc\GetNewMysticBusinessItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetNewMysticBusinessItemListAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetNewMysticStoreItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetOpenServerTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetPartyBlessingData.cs" />
+    <Compile Include="ProtoMsg\rpc\GetPartyBlessingReward.cs" />
+    <Compile Include="ProtoMsg\rpc\GetServerTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetServerTimeDebug.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetSignInfo.cs" />
+    <Compile Include="ProtoMsg\rpc\GetSignItems.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetSignItemsReult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetStoreItemList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GetTurntableDrawData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GodshipOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GrowingFundOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\GuidePickupSword.cs" />
+    <Compile Include="ProtoMsg\rpc\GuideSetXpFull.cs" />
+    <Compile Include="ProtoMsg\rpc\InviteeEnterGame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\IsNewMysticBusinessItemCanBuy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\IsNewMysticBusinessItemCanBuyAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\IsNewMysticStoreCanPurchase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\IsNewMysticStoreCanPurchaseAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\IsNewMysticStoreFreeRefresh.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\IsNewMysticStoreFreeRefreshAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ItemCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ItemXchgCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ItemXchgItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\L2pwdAuth.cs" />
+    <Compile Include="ProtoMsg\rpc\L2pwdRpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\L2pwdUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\LearnPetSkill.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\LearnPetSkillResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\LevelBuyOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\LevelGiftInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\LevelGiftUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\LevelupSendItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\LimitItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MagicDartsCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MagicSuit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MagicSuitInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MagicsuitUpRise.cs" />
+    <Compile Include="ProtoMsg\rpc\MagicsuitUpRiseAck.cs" />
+    <Compile Include="ProtoMsg\rpc\MicroGiftReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MicroGiftRet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MonthFeedbackData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MonthFeedbackGiftInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MonthFeedbackGiftUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MountBless.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MountCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MountLevelUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\MultiGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\NeedCharge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\NewMysticStoreCheckItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\NewMysticStoreZeroReset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\OffLine1V1Req.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\OffLine1V1Resp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\OffLineItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\OpenBossRushCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PayGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PersonReborn.cs" />
+    <Compile Include="ProtoMsg\rpc\PetBookUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PetImprove.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PetImproveResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PetInherit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PetInheritResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PetLock.cs" />
+    <Compile Include="ProtoMsg\rpc\PetSpriteReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PetSpriteRsp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PickupDropItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PiggyBankRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PlatStateReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PlatStateResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ProfessionTransfer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ProfessionTransferAgain.cs" />
+    <Compile Include="ProtoMsg\rpc\PushGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\PushItemInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QQFriendRecallReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QueryDailyGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QueryDailyGiftReult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QueryInviteGift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QueryInviteGiftReult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QueryItemsResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QuestRpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\QuestRpcAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Refine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RefineTransfer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RefreshMysticStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RefreshMysticStoreAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RefreshNewMysticBusinessItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RefreshNewMysticBusinessItemAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RefreshNewMysticStoreItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RefreshNewMysticStoreItemAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Regain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RegainChange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ResetBossRushCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Rpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\RpcAck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Run.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SaveEnchantProps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SellItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SetChatBubbleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SetDailyInviteGift.cs" />
+    <Compile Include="ProtoMsg\rpc\SetDailyInviteGiftResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SetHpHealThreshold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SetMpHealThreshold.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SetPartyBlessingData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SetPetSlotNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ShareStory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ShopBuyItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SignConuConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SignIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SignInResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SignTotConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SignUnit.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SignUserData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SortBag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\SortStore.cs" />
+    <Compile Include="ProtoMsg\rpc\SplitItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\StoreItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\StoreMoney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\TencentVipReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\TencentVipResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\ThrownItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\TowerBuyItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\TransferEnchantProps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\TransferLoverReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Transport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\TriggerDailyPay.cs" />
+    <Compile Include="ProtoMsg\rpc\TryDailyRefresh.cs" />
+    <Compile Include="ProtoMsg\rpc\TurntableDrawCfg.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\Unlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateActivityDgnTimes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateBagItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateBagItemProp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateBagSlotNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateBindCrystal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateContinuousLogin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateCryStal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateDailyPayData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateEquipOn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateFamilyContri.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateHonorPoints.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateMachinariumDgnTimes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateManorBonus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateMoney.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateMountEquipOn.cs" />
+    <Compile Include="ProtoMsg\rpc\UpdateMultiDgnTimes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\updateNewbieLoginNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdatePetCombatPower.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdatePriesthoodBonus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateQuartz.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateQuestCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateQuestData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateQuestObjNum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateSeabedBonus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpdateThreeDiabetesBonus.cs" />
+    <Compile Include="ProtoMsg\rpc\UpdateVitaRecTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UpFixedPayActInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UseItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UseNpc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UsePillReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\UsePillResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\VipExtraReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\VipExtraResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\VitaRec.cs" />
+    <Compile Include="ProtoMsg\rpc\WingCardAdd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\WingCardGetList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\WingDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\WingEquipOn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\WingLevelUpReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\WingLevelUpResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\XchgTurntableDrawItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\XOCashUpReq.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtoMsg\rpc\XOCashUpResp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\RequestItem.cs" />
+    <Compile Include="Tools\ByteTool.cs" />
+    <Compile Include="Tools\ClockWork.cs" />
+    <Compile Include="Tools\Commands.cs" />
+    <Compile Include="Tools\compress.cs" />
+    <Compile Include="Tools\CRC32.cs" />
+    <Compile Include="Tools\FlashPolicy.cs" />
+    <Compile Include="handle\ActivityController.cs" />
+    <Compile Include="handle\AFKCtrl.cs" />
+    <Compile Include="handle\ArenaController.cs" />
+    <Compile Include="handle\BellCtrl.cs" />
+    <Compile Include="handle\BonousXchgCtrl.cs" />
+    <Compile Include="handle\BossRushController.cs" />
+    <Compile Include="handle\ChargeBonusCtrl.cs" />
+    <Compile Include="handle\ChargeDragonCtrl.cs" />
+    <Compile Include="handle\ChargePresentWindowCtrl.cs" />
+    <Compile Include="handle\ChatController.cs" />
+    <Compile Include="handle\ChatManager.cs" />
+    <Compile Include="handle\ChooseCharStage.cs" />
+    <Compile Include="handle\ChristmasTreeCtrl.cs" />
+    <Compile Include="handle\CoMarketCtrl.cs" />
+    <Compile Include="handle\ConsumeRankCtrl.cs" />
+    <Compile Include="handle\ConsumeStageCtrl.cs" />
+    <Compile Include="handle\CreateCharStage.cs" />
+    <Compile Include="handle\DailyMustCtrl.cs" />
+    <Compile Include="handle\DeliveryCtrl.cs" />
+    <Compile Include="handle\DragonSoulManager.cs" />
+    <Compile Include="handle\DuelCtrl.cs" />
+    <Compile Include="handle\DungeonController.cs" />
+    <Compile Include="handle\DungeonLootCtrl.cs" />
+    <Compile Include="handle\DungeonMessageListener.cs" />
+    <Compile Include="handle\EtcPropsViewCtrl.cs" />
+    <Compile Include="handle\FamilyController.cs" />
+    <Compile Include="handle\FamilyManorCtrl.cs" />
+    <Compile Include="handle\FamilyWorshipCtrl.cs" />
+    <Compile Include="handle\FashionDeadLineCtrl.cs" />
+    <Compile Include="handle\ForgeRankComponent.cs" />
+    <Compile Include="handle\FriendController.cs" />
+    <Compile Include="handle\Fun.cs" />
+    <Compile Include="handle\FunSocket.cs" />
+    <Compile Include="handle\GameClock.cs" />
+    <Compile Include="handle\GameConsole.cs" />
+    <Compile Include="handle\GroupController.cs" />
+    <Compile Include="handle\GroupMessageListener.cs" />
+    <Compile Include="handle\LeadManager.cs" />
+    <Compile Include="handle\LoginMessageListener.cs" />
+    <Compile Include="handle\LoginZoneMessageListener.cs" />
+    <Compile Include="handle\LuckyDrawCtrl.cs" />
+    <Compile Include="handle\MachinariumCtrl.cs" />
+    <Compile Include="handle\MagicDartsCtrl.cs" />
+    <Compile Include="handle\MailController.cs" />
+    <Compile Include="handle\MallCommon.cs" />
+    <Compile Include="handle\MallCtrl.cs" />
+    <Compile Include="handle\MarriageCtrl.cs" />
+    <Compile Include="handle\MentorCtrl.cs" />
+    <Compile Include="handle\MoveMobAction.cs" />
+    <Compile Include="handle\MultiGroupClashController.cs" />
+    <Compile Include="handle\NewYearGiftCtrl.cs" />
+    <Compile Include="handle\NpcManager.cs" />
+    <Compile Include="handle\OffLinePvpCtrl.cs" />
+    <Compile Include="handle\PacketSender.cs" />
+    <Compile Include="handle\PetBookCtrl.cs" />
+    <Compile Include="handle\PetCtrl.cs" />
+    <Compile Include="handle\PickupSwordAction.cs" />
+    <Compile Include="handle\PropagateController.cs" />
+    <Compile Include="handle\Scenario.cs" />
+    <Compile Include="handle\SceneController.cs" />
+    <Compile Include="handle\SceneMessageListener.cs" />
+    <Compile Include="handle\Shell.cs" />
+    <Compile Include="handle\ShowObjectAction.cs" />
+    <Compile Include="handle\Skill.cs" />
+    <Compile Include="handle\StoryAction.cs" />
+    <Compile Include="handle\StoryController.cs" />
+    <Compile Include="handle\SystemController.cs" />
+    <Compile Include="handle\SystemMessageListener.cs" />
+    <Compile Include="handle\TowerDungeonController.cs" />
+    <Compile Include="handle\TransportManager.cs" />
+    <Compile Include="handle\VipMainController.cs" />
+    <Compile Include="handle\WeddingCtrl.cs" />
+    <Compile Include="handle\WildBossController.cs" />
+    <Compile Include="handle\WorldBossController.cs" />
+    <Compile Include="handle\WorldLimitBuyCtrl.cs" />
+    <Compile Include="handle\XOContestCtrl.cs" />
+    <Compile Include="handle\ZoneBossCtrl.cs" />
+    <Compile Include="Tools\Loads.cs" />
+    <Compile Include="Tools\log.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Protos\MessageConst.cs" />
+    <Compile Include="Tools\Randoms.cs" />
+    <Compile Include="Tools\Serial.cs" />
+    <Compile Include="GSystem\Game\Folders.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="zlib32.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="zlib64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Pockie Saints Private Server\config\config.csproj">
+      <Project>{38917167-3bdd-4eda-9814-c32e14466ecb}</Project>
+      <Name>config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared Libraries\Blib2\Blib2.csproj">
+      <Project>{5fb99745-bbe3-4e32-bb8d-11174042b41d}</Project>
+      <Name>Blib2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Shared Libraries\TimeZone\TimeZone.csproj">
+      <Project>{1ab73d98-2b3c-4e44-920c-d960116c34ec}</Project>
+      <Name>TimeZone</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

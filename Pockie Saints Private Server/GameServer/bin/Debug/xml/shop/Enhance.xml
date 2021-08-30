@@ -1,0 +1,12 @@
+<shop>
+	<shopinfo shopid="5" shoptype="1" description="Enhance"/>
+	<items>
+		<item id="8210003" costvalue="58" time="0" costtype="3" limit="0"/>
+		<item id="8220002" costvalue="48" time="0" costtype="3" limit="0"/>
+		<item id="8220003" costvalue="58" time="0" costtype="3" limit="0"/>
+		<item id="8230002" costvalue="48" time="0" costtype="3" limit="0"/>
+		<item id="8230003" costvalue="58" time="0" costtype="3" limit="0"/>
+		<item id="8240002" costvalue="48" time="0" costtype="3" limit="0"/>
+		<item id="8240003" costvalue="58" time="0" costtype="3" limit="0"/>
+	</items>
+</shop>

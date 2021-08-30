@@ -1,0 +1,57 @@
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\bin\Debug\Item Helper.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\bin\Debug\Item Helper.pdb
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.Find_Form.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.ItemsView.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.Main.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.MultiAdd.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.NewShop.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.Results.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.Shop_Manager.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item_Helper.ShopControl.resources
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item Helper.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item Helper.exe
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\obj\Debug\Item Helper.pdb
+C:\Users\Trigenite\Desktop\local data\New folder\TcpTools\Item Helper\bin\Debug\Item Helper.exe.config
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.csprojResolveAssemblyReference.cache
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.exe
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.pdb
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\bin\Debug\Item Helper.exe.config
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\bin\Debug\Item Helper.exe
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\bin\Debug\Item Helper.pdb
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\bin\Debug\blib.dll
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\bin\Debug\blib.pdb
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Find_Form.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.ItemsView.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Main.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.MultiAdd.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.NewShop.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.PackBuild.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Properties.Resources.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Results.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Shop_Manager.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.ShopControl.resources
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.csproj.GenerateResource.Cache
+C:\Users\Teboho\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.SelectOne.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.ExplorerControl.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Explorer.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Find_Form.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.ItemsView.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Main.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.MultiAdd.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.NewShop.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.PackBuild.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Properties.Resources.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Results.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.SelectOne.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.Shop_Manager.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item_Helper.ShopControl.resources
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Debug\Item Helper.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Debug\Item Helper.exe
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Debug\Item Helper.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Debug\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\bin\Debug\blib.pdb
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.exe
+C:\Users\Trigenite\Desktop\TcpTools\Item Helper\obj\Debug\Item Helper.pdb

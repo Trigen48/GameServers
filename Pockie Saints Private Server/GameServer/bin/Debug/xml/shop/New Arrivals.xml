@@ -1,0 +1,34 @@
+<shop>
+	<shopinfo shopid="1" shoptype="1" description="New Arrivals"/>
+	<items>
+		<item id="1040009" costvalue="800" time="0" costtype="3" limit="0"/>
+		<item id="1040008" costvalue="735" time="0" costtype="3" limit="0"/>
+		<item id="1040010" costvalue="735" time="0" costtype="3" limit="0"/>
+		<item id="3010037" costvalue="888" time="0" costtype="3" limit="0"/>
+		<item id="1040005" costvalue="735" time="0" costtype="3" limit="0"/>
+		<item id="1040003" costvalue="735" time="0" costtype="3" limit="0"/>
+		<item id="3010036" costvalue="860" time="0" costtype="3" limit="0"/>
+		<item id="1040002" costvalue="735" time="0" costtype="3" limit="0"/>
+		<item id="6050001" costvalue="235" time="0" costtype="3" limit="0"/>
+		<item id="2285001" costvalue="94" time="0" costtype="3" limit="0"/>
+		<item id="2283001" costvalue="49" time="0" costtype="3" limit="0"/>
+		<item id="1040001" costvalue="735" time="0" costtype="3" limit="0"/>
+		<item id="2282003" costvalue="625" time="0" costtype="3" limit="0"/>
+		<item id="2282002" costvalue="94" time="0" costtype="3" limit="0"/>
+		<item id="1117004" costvalue="150" time="0" costtype="3" limit="0"/>
+		<item id="3110012" costvalue="1110" time="0" costtype="3" limit="0"/>
+		<item id="3010013" costvalue="860" time="0" costtype="3" limit="0"/>
+		<item id="2290004" costvalue="625" time="0" costtype="3" limit="0"/>
+		<item id="4111001" costvalue="19" time="0" costtype="3" limit="0"/>
+		<item id="8210003" costvalue="58" time="0" costtype="3" limit="0"/>
+		<item id="3018003" costvalue="610" time="0" costtype="3" limit="0"/>
+		<item id="3010019" costvalue="860" time="0" costtype="3" limit="0"/>
+		<item id="3010020" costvalue="860" time="0" costtype="3" limit="0"/>
+		<item id="2230003" costvalue="13" time="0" costtype="3" limit="0"/>
+		<item id="2290003" costvalue="125" time="0" costtype="3" limit="0"/>
+		<item id="2290002" costvalue="63" time="0" costtype="3" limit="0"/>
+		<item id="2290001" costvalue="25" time="0" costtype="3" limit="0"/>
+		<item id="1117005" costvalue="600" time="0" costtype="3" limit="0"/>
+		<item id="2282001" costvalue="2" time="0" costtype="3" limit="0"/>
+	</items>
+</shop>

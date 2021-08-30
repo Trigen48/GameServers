@@ -1,0 +1,14 @@
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\gateway.exe.config
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\gateway.csprojResolveAssemblyReference.cache
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\gateway.csproj.GenerateResource.Cache
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\gateway.exe
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\gateway.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\blib.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\config.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\ConnectorX.dll
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\blib.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\config.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\bin\Debug\ConnectorX.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\gateway.exe
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\gateway.pdb
+C:\Users\Trigenite\Desktop\TcpTools\ConnectionServer\obj\Debug\gateway.Properties.Resources.resources

@@ -1,0 +1,27 @@
+<shop>
+	<shopinfo shopid="201017" shoptype="1" description="Basic Shop star"/>
+	<items>
+		<item id="2010001" costvalue="4" time="0" costtype="4" limit="99"/>
+		<item id="2010002" costvalue="10" time="0" costtype="4" limit="99"/>
+		<item id="2010003" costvalue="30" time="0" costtype="4" limit="99"/>
+		<item id="2010004" costvalue="60" time="0" costtype="4" limit="99"/>
+		<item id="2010005" costvalue="120" time="0" costtype="4" limit="99"/>
+		<item id="2010006" costvalue="180" time="0" costtype="4" limit="99"/>
+		<item id="2010007" costvalue="240" time="0" costtype="4" limit="99"/>
+		<item id="2010008" costvalue="300" time="0" costtype="4" limit="99"/>
+		<item id="2010009" costvalue="360" time="0" costtype="4" limit="99"/>
+		<item id="2010010" costvalue="420" time="0" costtype="4" limit="99"/>
+		<item id="2010011" costvalue="480" time="0" costtype="4" limit="99"/>
+		<item id="2020001" costvalue="4" time="0" costtype="4" limit="99"/>
+		<item id="2020002" costvalue="10" time="0" costtype="4" limit="99"/>
+		<item id="2020003" costvalue="30" time="0" costtype="4" limit="99"/>
+		<item id="2020004" costvalue="60" time="0" costtype="4" limit="99"/>
+		<item id="2020005" costvalue="120" time="0" costtype="4" limit="99"/>
+		<item id="2020006" costvalue="180" time="0" costtype="4" limit="99"/>
+		<item id="2020007" costvalue="240" time="0" costtype="4" limit="99"/>
+		<item id="2020008" costvalue="300" time="0" costtype="4" limit="99"/>
+		<item id="2020009" costvalue="360" time="0" costtype="4" limit="99"/>
+		<item id="2020010" costvalue="420" time="0" costtype="4" limit="99"/>
+		<item id="2020011" costvalue="480" time="0" costtype="4" limit="99"/>
+	</items>
+</shop>
